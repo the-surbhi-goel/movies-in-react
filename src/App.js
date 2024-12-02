@@ -6,7 +6,9 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <AllRoutes />
+      <main className="dark:bg-zinc-700">
+        <AllRoutes />
+      </main>
       <Footer />
     </div>
   );

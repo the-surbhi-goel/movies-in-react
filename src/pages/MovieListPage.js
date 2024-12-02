@@ -1,11 +1,15 @@
-import React from 'react'
+import React from "react";
+import MovieCard from "../components/MovieCard";
 
 const MovieListPage = () => {
   return (
-    <div>
-      
-    </div>
-  )
-}
+    <section className="py-7">
+      <div className="flex justofy-start flex-wrap">
+        <MovieCard />
+        <MovieCard />
+      </div>
+    </section>
+  );
+};
 
-export default MovieListPage
+export default MovieListPage;

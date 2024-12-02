@@ -4,7 +4,7 @@ import { MovieDetailPage, MovieListPage, PageNotFound, SearchPage } from "../pag
 const AllRoutes = () => {
   return (
     (
-        <div className="dark:bg-darkbg">
+        <div className="">
             <Routes>
                 <Route path="" element={<MovieListPage apiPath="movie/now_playing" title="Home" />} />
                 <Route path="movie/:id" element={<MovieDetailPage />} />
