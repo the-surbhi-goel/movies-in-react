@@ -11,8 +11,8 @@ const AllRoutes = () => {
                 <Route path="movies/popular" element={<MovieListPage apiPath="movie/popular" title="Popular" />} />
                 <Route path="movies/top" element={<MovieListPage apiPath="movie/top_rated" title="Top Rated" />} />
                 <Route path="movies/upcoming" element={<MovieListPage apiPath="movie/upcoming" title="Upcoming" />} />
-                <Route path="search" element={<SearchPage apiPath="search/movie" />} />
-                <Route path="*" element={<PageNotFound />} />
+                <Route path="search" element={<SearchPage apiPath="search/movie" title="Search Result For" />} />
+                <Route path="*" element={<PageNotFound title="Page Not Found" />} />
             </Routes>
         </div>
       )

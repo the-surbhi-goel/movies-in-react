@@ -1,9 +1,12 @@
 import React from "react";
 import MovieCard from "../components/MovieCard";
 import useFetch from "../hooks/useFetch";
+import { useTitle } from "../hooks/useTitle";
 
-const MovieListPage = ({ apiPath }) => {
-  const { data: movieList } = useFetch(apiPath);
+const MovieListPage = ({ apiPath, title }) => {
+  const { data } = useFetch(apiPath);
+  const movieList = data.results;
+  useTitle(title);
 
   return (
     <section className="py-7">

@@ -2,8 +2,10 @@ import { Button } from "../components";
 import { Link } from "react-router-dom";
 import PageNotFoundImage from "../assets/pageNotFound.png";
 import darkPageNotFoundImage from "../assets/darkPageNotFound.jpeg";
+import { useTitle } from "../hooks/useTitle";
 
-const PageNotFound = () => {
+const PageNotFound = ({ title }) => {
+  useTitle(title);
 
   return (
     <section className="flex flex-col justify-center px-2">

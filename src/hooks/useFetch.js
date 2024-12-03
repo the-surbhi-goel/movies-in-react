@@ -9,7 +9,7 @@ const useFetch = (apiUrl, query = "") => {
     async function fetchMovies() {
       const res = await fetch(url);
       const data = await res.json();
-      setData(data.results);
+      setData(data);
     }
 
     fetchMovies();
