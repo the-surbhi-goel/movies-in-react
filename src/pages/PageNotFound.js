@@ -1,11 +1,33 @@
-import React from 'react'
+import { Button } from "../components";
+import { Link } from "react-router-dom";
+import PageNotFoundImage from "../assets/pageNotFound.png";
+import darkPageNotFoundImage from "../assets/darkPageNotFound.jpeg";
 
 const PageNotFound = () => {
-  return (
-    <div>
-      
-    </div>
-  )
-}
 
-export default PageNotFound
+  return (
+    <section className="flex flex-col justify-center px-2">
+      <div className="flex flex-col items-center my-4">
+        <div className="max-w-lg">
+          <img
+            className="rounded dark:invisible dark:h-0"
+            src={PageNotFoundImage}
+            alt="404 Page Not Found"
+          />
+          <img
+            className="rounded invisible h-0 dark:visible dark:h-full"
+            src={darkPageNotFoundImage}
+            alt="404 Page Not Found"
+          />
+        </div>
+      </div>
+      <div className="flex justify-center my-4">
+        <Link to="/">
+          <Button>Back To Movies</Button>
+        </Link>
+      </div>
+    </section>
+  );
+};
+
+export default PageNotFound;

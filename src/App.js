@@ -4,9 +4,9 @@ import AllRoutes from "./routes/AllRoutes";
 
 function App() {
   return (
-    <div className="App">
+    <div className="App dark:bg-darkbg">
       <Header />
-      <main className="dark:bg-zinc-700">
+      <main className="dark:bg-darkbg">
         <AllRoutes />
       </main>
       <Footer />

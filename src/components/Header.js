@@ -3,8 +3,8 @@ import Logo from "../assets/logo.png";
 import { NavLink, useNavigate } from "react-router-dom";
 
 const Header = () => {
-  const [hidden, setHidden] = useState(JSON.parse(localStorage.getItem("mode")) || true);
-  const [mode, setMode] = useState(true);
+  const [hidden, setHidden] = useState(true);
+  const [mode, setMode] = useState(JSON.parse(localStorage.getItem("mode")) || true);
   const navigate = useNavigate();
 
   const activeClass =

@@ -18,7 +18,7 @@ const SearchPage = ({ apiPath }) => {
         )}
       </section>
       <section className="py-7">
-        <div className="flex justofy-start flex-wrap">
+        <div className="flex justofy-start flex-wrap laptop:justify-evenly">
           {movieList && movieList.map((movie, index) => <MovieCard key={index} movie={movie} />)}
         </div>
       </section>
