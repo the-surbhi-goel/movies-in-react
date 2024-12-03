@@ -9,7 +9,7 @@ const MovieCard = ({ movie }) => {
     <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-700 dark:border-gray-800 m-3">
       <Link to={`/movie/${movie.id}`}>
         <img
-          className="rounded-t-lg"
+          className="rounded-t-lg m-auto"
           src={
             movie.poster_path ? `${PosterPath}${movie.poster_path}` : movieImage
           }

@@ -2,7 +2,7 @@ import React from "react";
 import MovieCard from "../components/MovieCard";
 import useFetch from "../hooks/useFetch";
 
-const MovieListPage = ( { apiPath }) => {
+const MovieListPage = ({ apiPath }) => {
   const { data: movieList } = useFetch(apiPath);
 
   return (
